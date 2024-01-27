@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+        .nav-link {
+            text-align: center;
+        }
+
+        section { 
+            
+            background-color: #fff;
+            padding-top: 70px;
+        }
+
+        header{
+
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+
+        .tab-content>.active {
+            display: flex;
+        }
+
+        section img {
+
+            height: 300px;
+
+        }
+
+        section .nav-pills {
+            margin: 10px;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Apple</h1>
+
+                
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active"  href="#About-us">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#ultimas-noticias">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#contato">Contato</a>
+                        </li>
+                    </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div id="caurosel-exemplo"  class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100"  src="https://cdn.pixabay.com/photo/2017/08/02/20/42/black-and-white-2573314_1280.jpg" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/11/18/15/05/apple-1835211_1280.jpg" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_1280.jpg" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg" alt="">
+                </div>
+            </div>
+            <button data-bs-target="#caurosel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#caurosel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="About-us">
+            <h2>Sobre nós</h2>
+                <p>
+                    A Apple é uma das maiores empresas de tecnologia do planeta. Ela foi fundada no dia 1º de abril de 1976 por Steve Wozniak, Steve Jobs e Ronald Wayne a fim de começar a produzir e vender seu primeiro produto: o computador Apple I, criado por Wozniak. 
+                </p>
+                <p>
+                    Originalmente chamada de Apple Computer Company, a empresa passou a ser Apple Computer Inc. a partir de 1977. No mesmo ano, começou a vender o Apple II, que rapidamente se tornou sucesso de vendas e um dos primeiros microcomputadores com produção em grande escala.
+                </p>
+        </section>
+        <section id="ultimas-noticias">
+            <h2>Lançamentos</h2>
+            <div class="container">
+                <nav class="nav nav-pills">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Iphone</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Watch</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Macbook</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <article class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2014/07/01/12/25/apple-iphone-381219_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Iphone 3G</h4>
+                                        <p class="card-text">
+                                            Com uma tela de 3,5 polegadas, painel de vidro sensível ao toque e suporte para multitouch, o iPhone 2G (também chamado apenas de iPhone) lançado em 2007 foi uma verdadeira revolução no mercado da telefonia móvel
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                    <footer class="card-footer">
+                                        Postado em <time> 26/01/2024 as 19:30</time>
+                                    </footer>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <article class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2014/07/01/12/25/apple-iphone-381219_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Iphone 3G</h4>
+                                        <p class="card-text">
+                                            Com uma tela de 3,5 polegadas, painel de vidro sensível ao toque e suporte para multitouch, o iPhone 2G (também chamado apenas de iPhone) lançado em 2007 foi uma verdadeira revolução no mercado da telefonia móvel
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                    <footer class="card-footer">
+                                        Postado em <time> 26/01/2024 as 19:30</time>
+                                    </footer>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <article class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2014/07/01/12/25/apple-iphone-381219_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Iphone 3G</h4>
+                                        <p class="card-text">
+                                            Com uma tela de 3,5 polegadas, painel de vidro sensível ao toque e suporte para multitouch, o iPhone 2G (também chamado apenas de iPhone) lançado em 2007 foi uma verdadeira revolução no mercado da telefonia móvel
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                    <footer class="card-footer">
+                                        Postado em <time> 26/01/2024 as 19:30</time>
+                                    </footer>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane" id="aba2">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <article class="card">
+                                    <img class="img-100-100" src="https://cdn.pixabay.com/photo/2017/07/31/21/59/apple-2561475_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Apple Watch Series 1 </h4>
+                                        <p class="card-text">
+                                            Lançado em 2015, meses após sua apresentação oficial, o Apple Watch Original tomou o mercado de smartwatches em menos de um ano e não saiu mais do topo. A Apple tentou, num primeiro momento, atrair vários perfis de usuários, desde os que só usavam pelas pulseiras descoladas aos consumidores de relógios premium, que usam modelos de marcas como Rolex e similares
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                    <footer class="card-footer">
+                                        Postado em <time> 26/01/2024 as 20:30</time>
+                                    </footer>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <article class="card">
+                                    <img class="img-100-100" src="https://cdn.pixabay.com/photo/2017/07/31/21/59/apple-2561475_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Apple Watch Series 1 </h4>
+                                        <p class="card-text">
+                                            Lançado em 2015, meses após sua apresentação oficial, o Apple Watch Original tomou o mercado de smartwatches em menos de um ano e não saiu mais do topo. A Apple tentou, num primeiro momento, atrair vários perfis de usuários, desde os que só usavam pelas pulseiras descoladas aos consumidores de relógios premium, que usam modelos de marcas como Rolex e similares
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                    <footer class="card-footer">
+                                        Postado em <time> 26/01/2024 as 20:30</time>
+                                    </footer>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <article class="card">
+                                    <img class="img-100-100" src="https://cdn.pixabay.com/photo/2017/07/31/21/59/apple-2561475_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Apple Watch Series 1 </h4>
+                                        <p class="card-text">
+                                            Lançado em 2015, meses após sua apresentação oficial, o Apple Watch Original tomou o mercado de smartwatches em menos de um ano e não saiu mais do topo. A Apple tentou, num primeiro momento, atrair vários perfis de usuários, desde os que só usavam pelas pulseiras descoladas aos consumidores de relógios premium, que usam modelos de marcas como Rolex e similares
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                    <footer class="card-footer">
+                                        Postado em <time> 26/01/2024 as 20:30</time>
+                                    </footer>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane" id="aba3">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <article class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2018/10/29/15/21/laptop-3781366_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Macbook Air M1</h4>
+                                        <p class="card-text">
+                                            O M1 foi o primeiro chip da Apple projetado especialmente para o Mac. Ele reúne CPU, GPU, Neural Engine, conexões e outros componentes em uma peça só — e minúscula. Com 16 bilhões de transistores, o M1 oferece um desempenho excepcional, tecnologias exclusivas e consumo inteligente de energia. Uma verdadeira revolução para o Mac.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                    <footer class="card-footer">
+                                        Postado em <time> 26/01/2024 as 21:30</time>
+                                    </footer>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <<article class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2018/10/29/15/21/laptop-3781366_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Macbook Air M1</h4>
+                                        <p class="card-text">
+                                            O M1 foi o primeiro chip da Apple projetado especialmente para o Mac. Ele reúne CPU, GPU, Neural Engine, conexões e outros componentes em uma peça só — e minúscula. Com 16 bilhões de transistores, o M1 oferece um desempenho excepcional, tecnologias exclusivas e consumo inteligente de energia. Uma verdadeira revolução para o Mac.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                    <footer class="card-footer">
+                                        Postado em <time> 26/01/2024 as 21:30</time>
+                                    </footer>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <article class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2018/10/29/15/21/laptop-3781366_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Macbook Air M1</h4>
+                                        <p class="card-text">
+                                            O M1 foi o primeiro chip da Apple projetado especialmente para o Mac. Ele reúne CPU, GPU, Neural Engine, conexões e outros componentes em uma peça só — e minúscula. Com 16 bilhões de transistores, o M1 oferece um desempenho excepcional, tecnologias exclusivas e consumo inteligente de energia. Uma verdadeira revolução para o Mac.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                    <footer class="card-footer">
+                                        Postado em <time> 26/01/2024 as 21:30</time>
+                                    </footer>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                <div class="col-md-6 contact-form">
+                    <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Full name">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your E-mail">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="message">Menssage:</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Menssage"></textarea>
+                    </div>
+            
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
